@@ -130,7 +130,7 @@ virt-install \
 --extra-args='console=ttyS0' \
 --force
 # ------------------------
-virt-install --virt-type=kvm --name=centos88 --vcpus=2 --memory=4096 --location=/tmp/CentOS-7-x86_64-Minimal-1511.iso --disk path=/home/vms/centos88.qcow2,size=40,format=qcow2 --network bridge=br0 --graphics none --extra-args='console=ttyS0' --force
+virt-install --virt-type=kvm --name=centos88 --vcpus=2 --memory=4096 --location=/tmp/CentOS-7-x86_64-Minimal-1511.iso --disk path=/home/vms/centos88.qcow2,size=40,format=qcow2 --network bridge=virbr0 --graphics none --extra-args='console=ttyS0' --force
 ```
 
 ### 命令行配置系统
